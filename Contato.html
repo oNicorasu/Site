@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagem/ball.ico" type="image/x-icon">
+    <title>Voleizin dos Cria</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+<body>
+    <nav class="dp-menu">
+        <ul style="padding: 0px 500px;">
+            <a href="index.html"><img src="assets/imagem/Haikyuu-Logo.png"  style="vertical-align: top;" height="128px"></a>
+            <li><a class="textmenu" href="index.html">Produtos</a>
+                <ul class="submenu">
+                    <li><a href="bolas.html">Bolas</a></li>
+                    <li><a href="joelheiras.html">Joelheiras</a></li>
+                    <li><a href="manguitos.html">Manguitos</a></li>
+                    <li><a href="tenis.html">Tênis</a></li>
+                </ul>
+            </li>
+                <li><a class="textmenu" href="Contato.html">Contato</a></li>
+                <li><a class="textmenu" href="quem-somos.html">Quem Somos</a></li>
+            </ul>
+        </nav>
+    <div class="container">
+        <div class="main">
+            <section id="contato">
+                <h1 style="font-size: 30px;"><strong>ENTRE EM CONTATO CONOSCO</strong></h1>
+                <p style="font-size: 15px;">Abaixo listamos as formas de contato disponíveis em nossa loja.<br>
+                    Estamos ansiosos em lhe atender da melhor maneira possível.<br>
+                    <br>
+                    <strong>Central de Atendimento ao Cliente</strong><br>
+                    (11) 4285-0560(11) 94495-5200<br>
+                    <br>
+                    <strong>Endereço</strong><br>
+                    <br>
+                    RUA VALDEMAR MARTINS- CASA VERDE,SÃO PAULO-SP<br>
+                    <br>
+                    <strong>CNPJ</strong><br>
+                    <br>
+                    23.206.861/0001-26<br>
+                    <strong>E-mail</strong><br>
+                    <br>
+                    Entre em contato conosco através do e-mail loja@haikyuu.com.br<br>
+                    <br>
+                    <strong>Formulário de Contato</strong><br>
+                    <br>
+                    Campos marcados com barra são de preenchimento obrigatório.<br>
+                    <br>
+                </p>
+                <form>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" />
+                    </div>
+                    <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea id="msg"></textarea>
+                    </div>
+                    <div class="button">
+                        <a href="#openModal"><button type="button">Enviar sua mensagem</button></a>
+                        <div id="openModal" class="modalDialog">
+                        <div>
+                            <a href="Contato.html" title="Close" class="close">X</a>
+                            <h2>Mensagem</h2>
+                            <p>Obrigado por entrar em contato conosco!</p>
+                    </div>
+                    </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+        <style>
+            body {
+                background-image:url("assets/imagem/thumb-1920-741745.png");
+            }
+                .modalDialog {
+                position: fixed;
+                font-family: Arial, Helvetica, sans-serif;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.8);
+                z-index: 99999;
+                opacity: 0;
+                -webkit-transition: opacity 400ms ease-in;
+                -moz-transition: opacity 400ms ease-in;
+                transition: opacity 400ms ease-in;
+                pointer-events: none;
+            }
+                .modalDialog:target {
+                opacity: 1;
+                pointer-events: auto;
+            }
+                .modalDialog > div {
+                width: 400px;
+                position: relative;
+                margin: 10% auto;
+                padding: 5px 20px 13px 20px;
+                border-radius: 10px;
+                background: #fff;
+                background: -moz-linear-gradient(#fff, #999);
+                background: -webkit-linear-gradient(#fff, #999);
+                background: -o-linear-gradient(#fff, #999);
+            }
+                .close {
+                background: #606061;
+                color: #FFFFFF;
+                line-height: 25px;
+                position: absolute;
+                right: -12px;
+                text-align: center;
+                top: -10px;
+                width: 24px;
+                text-decoration: none;
+                font-weight: bold;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+                -moz-box-shadow: 1px 1px 3px #000;
+                -webkit-box-shadow: 1px 1px 3px #000;
+                box-shadow: 1px 1px 3px #000;
+            }
+                .close:hover {
+                background: #00d9ff;
+            }
+        </style>
+</body>
+</html>
